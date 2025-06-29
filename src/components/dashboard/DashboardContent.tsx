@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Box,
-  Card,
-  CardContent,
-  Typography,
-  Avatar,
-  Stack,
-} from "@mui/material";
+import { Box, Typography, Avatar, Stack } from "@mui/material";
 import Grid from "@mui/material/Grid";
 import { ResponsiveContainer } from "recharts";
 import { cardData, statData } from "./DashboardContants";

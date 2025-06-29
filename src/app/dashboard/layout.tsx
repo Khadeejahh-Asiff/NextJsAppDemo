@@ -14,7 +14,7 @@ export default function DashboardLayout({
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isMobileSidebarOpen, setIsMobileSidebarOpen] = useState(false);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   // Close mobile sidebar when switching to desktop
   useEffect(() => {
@@ -45,13 +45,13 @@ export default function DashboardLayout({
       )}
 
       {/* Sidebar */}
-      <Sidebar 
+      <Sidebar
         onToggle={(collapsed) => setIsSidebarCollapsed(collapsed)}
         isMobile={isMobile}
         isMobileOpen={isMobileSidebarOpen}
         onMobileClose={handleSidebarClose}
       />
-      
+
       <main
         className={`${styles.main} ${isSidebarCollapsed && !isMobile ? styles.collapsed : ""} ${isMobile ? styles.mobileMain : ""}`}
       >

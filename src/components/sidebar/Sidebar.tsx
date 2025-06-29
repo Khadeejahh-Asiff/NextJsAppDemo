@@ -26,6 +26,7 @@ export default function Sidebar({
   onMobileClose,
 }: {
   active?: string;
+  // eslint-disable-next-line no-unused-vars
   onToggle?: (collapsed: boolean) => void;
   isMobile?: boolean;
   isMobileOpen?: boolean;
@@ -192,7 +193,7 @@ export default function Sidebar({
                 <ListItemText primary={item.label} />
               )}
             </ListItemButton>
-          )
+          ),
         )}
       </List>
     </Drawer>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from "react";
@@ -30,6 +31,8 @@ function LoginPage() {
 
   const onSubmit = (data: LoginFormData) => {
     router.push("/dashboard");
+    // eslint-disable-next-line no-console
+    console.log("Login successful with data:", data);
   };
 
   return (
@@ -56,7 +59,8 @@ function LoginPage() {
                 margin="normal"
                 {...register("username", {
                   required: "Username is required",
-                  validate: (value) => value.trim() !== "" || "Username cannot be empty"
+                  validate: (value) =>
+                    value.trim() !== "" || "Username cannot be empty",
                 })}
                 error={!!errors.username}
                 helperText={errors.username?.message}
@@ -72,7 +76,8 @@ function LoginPage() {
                 margin="normal"
                 {...register("password", {
                   required: "Password is required",
-                  validate: (value) => value.trim() !== "" || "Password cannot be empty"
+                  validate: (value) =>
+                    value.trim() !== "" || "Password cannot be empty",
                 })}
                 error={!!errors.password}
                 helperText={errors.password?.message}
