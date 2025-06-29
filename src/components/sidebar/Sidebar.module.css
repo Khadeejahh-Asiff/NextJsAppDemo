@@ -1,0 +1,186 @@
+.drawerPaper {
+  width: 320px;
+  background: #111;
+  color: #fff;
+  border: none;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: width 0.3s ease;
+  overflow-x: hidden;
+  height: auto;
+}
+
+.collapsed {
+  width: 100px;
+}
+
+/* Mobile drawer styles */
+.mobileDrawer {
+  width: 280px !important;
+  max-width: 85vw;
+}
+
+.logoArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 12px 8px 12px;
+  border-bottom: 1px solid #222;
+  position: relative;
+  gap: 2px;
+}
+
+.logoColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.logo {
+  height: 80px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  transition:
+    width 0.3s ease,
+    height 0.3s ease;
+  width: 140px;
+  object-fit: contain;
+}
+
+.small {
+  display: gone;
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.large {
+  width: 140px !important;
+  height: 80px !important;
+}
+
+.toggleButton {
+  margin-left: auto;
+  color: #222;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.arrowSideways {
+  transform: rotate(-90deg);
+  transition: transform 0.2s;
+}
+.arrowSidewaysOpen {
+  transform: rotate(90deg);
+  transition: transform 0.2s;
+}
+
+.menuList {
+  flex: 1;
+  padding-top: 8px;
+}
+
+.menuItem,
+.subMenuItem {
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.menuItem:hover,
+.subMenuItem:hover {
+  background: linear-gradient(90deg, #a100ff 0%, #e10000 100%);
+  color: #fff;
+}
+
+.activeItem {
+  background: linear-gradient(90deg, #8f00ff 0%, #e10000 100%);
+  color: #fff !important;
+  border-radius: 6px;
+}
+
+.nested {
+  padding-left: 32px !important;
+  background: #181818;
+  color: #fff;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+.collapsed .MuiListItemText-root {
+  display: none;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 1024px) {
+  .drawerPaper {
+    width: 280px;
+  }
+  
+  .mobileDrawer {
+    width: 280px !important;
+    max-width: 85vw;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 70px;
+  }
+  
+  .large {
+    width: 120px !important;
+    height: 70px !important;
+  }
+  
+  /* Center align icons in mobile */
+  .mobileDrawer .MuiListItemIcon-root {
+    min-width: 40px !important;
+    justify-content: center !important;
+  }
+  
+  .mobileDrawer .MuiListItemButton-root {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  
+  .mobileDrawer .nested {
+    padding-left: 48px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileDrawer {
+    width: 260px !important;
+    max-width: 90vw;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 60px;
+  }
+  
+  .large {
+    width: 100px !important;
+    height: 60px !important;
+  }
+  
+  /* Center align icons in mobile */
+  .mobileDrawer .MuiListItemIcon-root {
+    min-width: 36px !important;
+    justify-content: center !important;
+  }
+  
+  .mobileDrawer .MuiListItemButton-root {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  
+  .mobileDrawer .nested {
+    padding-left: 44px !important;
+  }
+}
