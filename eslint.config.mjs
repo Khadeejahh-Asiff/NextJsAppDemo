@@ -17,9 +17,6 @@ const eslintConfig = [
     "next/typescript",
     "plugin:prettier/recommended",
   ),
-  ...compat.extends(
-    'flex'
-  ),
 
   // 🔧 Add custom rules if needed
   {
@@ -33,9 +30,7 @@ const eslintConfig = [
     rules: {
       "no-console": "warn",
       "no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
-      // ✅ This tells Prettier to allow CRLF endings
       "prettier/prettier": ["error", { endOfLine: "crlf" }],
-      // '@next/next/no-img-element': 'off', // example override
     },
   },
 ];
