@@ -106,7 +106,7 @@ export default function DashboardContent() {
 
       <Box sx={{ my: 1 }}>
         <Grid container spacing={2}>
-          <Grid size={{ sm: 12, md: 6, lg: 6 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
             <Box
               sx={{
                 maxWidth: "100%",
@@ -134,7 +134,7 @@ export default function DashboardContent() {
               </Box>
             </Box>
           </Grid>
-          <Grid size={{ sm: 12, md: 6, lg: 6 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
             <Box
               sx={{
                 maxWidth: "100%",
@@ -167,7 +167,7 @@ export default function DashboardContent() {
 
       <Box sx={{ my: 1 }}>
         <Grid container spacing={2}>
-          <Grid size={{ sm: 12, md: 12, lg: 12 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 12, lg: 12 }}>
             <Box
               sx={{
                 maxWidth: "100%",
@@ -199,7 +199,7 @@ export default function DashboardContent() {
 
       <Box sx={{ my: 1 }}>
         <Grid container spacing={2}>
-          <Grid size={{ sm: 12, md: 6, lg: 6 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
             <Box
               sx={{
                 maxWidth: "100%",
