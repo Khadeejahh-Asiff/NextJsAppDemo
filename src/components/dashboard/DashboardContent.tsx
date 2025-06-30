@@ -228,7 +228,7 @@ export default function DashboardContent() {
             </Box>
           </Grid>
 
-          <Grid size={{ sm: 12, md: 6, lg: 6 }}>
+          <Grid size={{ xs: 12, sm: 12, md: 6, lg: 6 }}>
             <Box
               sx={{
                 maxWidth: "100%",
